@@ -1,0 +1,13 @@
+:root{--muted:#c7cbe0;--purple:#8568ff;--blue:#49b5ff;--line:rgba(255,255,255,.18)}
+body{background:radial-gradient(circle at 50% -10%,rgba(73,105,220,.34),transparent 42rem),linear-gradient(180deg,#0a0d24,#07091a)}
+.site-header{background:linear-gradient(180deg,rgba(7,9,27,.95),rgba(7,9,27,.55))}
+.stars{opacity:.48}.hero-inner{text-shadow:0 2px 22px rgba(0,0,0,.42)}
+.hero-copy{color:rgba(255,255,255,.94);font-weight:680;margin:8px 0 27px}
+.store-button{border-color:rgba(255,255,255,.5);background:#050711;box-shadow:0 10px 30px rgba(0,0,0,.24)}
+.store-mark{display:grid;place-items:center;width:28px;height:28px;border-radius:8px;background:#fff;color:#070918;font-size:17px;font-weight:1000}
+.section{padding:64px 0}
+.app-card{background:radial-gradient(circle at 20% 0%,rgba(133,104,255,.42),transparent 44%),linear-gradient(180deg,rgba(255,255,255,.13),rgba(49,60,151,.34) 72%,rgba(19,25,79,.94))}
+.app-card p{color:rgba(255,255,255,.86)}.feature p{color:rgba(255,255,255,.84)}
+.card-button{background:rgba(255,255,255,.11)}.card-button.primary{background:linear-gradient(90deg,var(--purple),#637dff);border-color:transparent}
+.reveal{opacity:1;transform:none}.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .65s,transform .65s}.js .reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .reveal{opacity:1;transform:none;transition:none}}
