@@ -9,5 +9,8 @@ body{background:radial-gradient(circle at 50% -10%,rgba(73,105,220,.34),transpar
 .app-card{background:radial-gradient(circle at 20% 0%,rgba(133,104,255,.42),transparent 44%),linear-gradient(180deg,rgba(255,255,255,.13),rgba(49,60,151,.34) 72%,rgba(19,25,79,.94))}
 .app-card p{color:rgba(255,255,255,.86)}.feature p{color:rgba(255,255,255,.84)}
 .card-button{background:rgba(255,255,255,.11)}.card-button.primary{background:linear-gradient(90deg,var(--purple),#637dff);border-color:transparent}
+.app-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.app-meta.upcoming{color:#ffd257}.card-button.disabled{cursor:default;color:rgba(255,255,255,.58);background:rgba(255,255,255,.06)}
+.privacy-policy{font-size:16px}.privacy-policy h2{margin:42px 0 12px;padding-top:28px;border-top:1px solid var(--line);font-size:clamp(23px,3vw,30px);line-height:1.35}.privacy-policy h3{margin:26px 0 8px;font-size:19px}.privacy-policy li{margin:.42em 0;color:rgba(255,255,255,.88)}.privacy-policy a{color:#8dcfff;text-decoration:underline;text-underline-offset:3px}.privacy-policy strong{color:#fff}.policy-download{display:inline-flex;margin-top:18px;padding:10px 16px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.08);font-weight:800}
 .reveal{opacity:1;transform:none}.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .65s,transform .65s}.js .reveal.visible{opacity:1;transform:none}
+@media(max-width:1100px) and (min-width:821px){.app-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .reveal{opacity:1;transform:none;transition:none}}
