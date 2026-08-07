@@ -1,7 +1,7 @@
 :root{--muted:#c7cbe0;--purple:#8568ff;--blue:#49b5ff;--line:rgba(255,255,255,.18)}
 body{background:radial-gradient(circle at 50% -10%,rgba(73,105,220,.34),transparent 42rem),linear-gradient(180deg,#0a0d24,#07091a)}
 .site-header{background:linear-gradient(180deg,rgba(7,9,27,.95),rgba(7,9,27,.55))}
-.stars{opacity:.48}.hero-inner{text-shadow:0 2px 22px rgba(0,0,0,.42)}
+.stars{opacity:.48}.shooting-stars{position:absolute;inset:0;z-index:1;overflow:hidden;pointer-events:none}.shooting-star{position:absolute;top:var(--star-y);left:var(--star-x);width:clamp(90px,14vw,170px);height:2px;border-radius:999px;background:linear-gradient(90deg,#fff 0%,rgba(154,211,255,.9) 16%,rgba(120,147,255,.38) 55%,transparent 100%);filter:drop-shadow(0 0 5px rgba(125,194,255,.9));opacity:0;transform:translate3d(0,0,0) rotate(-28deg);animation:shooting-star var(--star-duration) cubic-bezier(.16,.72,.24,1) forwards}.shooting-star::before{content:"";position:absolute;left:-2px;top:50%;width:5px;height:5px;border-radius:50%;background:#fff;box-shadow:0 0 9px 3px rgba(130,203,255,.78);transform:translateY(-50%)}@keyframes shooting-star{0%{opacity:0;transform:translate3d(0,0,0) rotate(-28deg)}8%{opacity:1}72%{opacity:1}100%{opacity:0;transform:translate3d(-72vw,38vh,0) rotate(-28deg)}}.hero-inner{text-shadow:0 2px 22px rgba(0,0,0,.42)}
 .hero-copy{color:rgba(255,255,255,.94);font-weight:680;margin:8px 0 27px}
 .official-store-badge{display:inline-flex;align-items:center;justify-content:center;min-height:48px}
 .official-store-badge img{display:block;width:auto;height:54px}
@@ -17,4 +17,4 @@ body{background:radial-gradient(circle at 50% -10%,rgba(73,105,220,.34),transpar
 .reveal{opacity:1;transform:none}.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .65s,transform .65s}.js .reveal.visible{opacity:1;transform:none}
 @media(max-width:1100px) and (min-width:821px){.app-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:820px){.app-grid{grid-template-columns:minmax(0,1fr)}.official-store-badge img{height:48px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .reveal{opacity:1;transform:none;transition:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.js .reveal{opacity:1;transform:none;transition:none}.shooting-stars{display:none}}
